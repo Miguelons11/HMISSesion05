@@ -4,11 +4,11 @@ public class Ejercicio2 {
 
 	public boolean login(String username,String password) {
 		//comprobar  que sean distintos de vacio
-		if(username.length()<30&&password.length()<30) {
-			return compruebaLoginEnBD(username,password);
+		if(username==""&&password=="") {
+			return false;
 			//comprobar que la longitud sea menor de 30
-		}else if(username!=""&&password!="") {
-			return compruebaLoginEnBD(username,password);
+		}else if(username.length()>=30&&password.length()>=30) {
+			return false;
 		}else {
 			return compruebaLoginEnBD(username,password);
 		}	
@@ -17,6 +17,10 @@ public class Ejercicio2 {
 	
 	public boolean compruebaLoginEnBD(String username, String password) {
 		//metodo mock
-		return true;
+		if(username=="user" && password=="password") {
+			return true;
+		}else { 
+			return true;
 	}
+}
 }
