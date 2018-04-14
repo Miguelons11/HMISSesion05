@@ -44,17 +44,65 @@ class Ejercicio2Test {
 		assertFalse(resultado);
 		
 	}
+	
+	@Test
+	public void testLoginUserNamePasswordCadenaVacía() {
+		//1.Arrange
+		Ejercicio2 e2=new Ejercicio2();
+		String username="user";
+		String password="password";
+		//2.act
+		Boolean resultado= e2.login(username, password);
+		//3.Assert
+		assertTrue(resultado);
+		
+	}
+	@Test
+	public void testLoginUserPasswordLongitud() {
+		//1.Arrange
+		Ejercicio2 e2=new Ejercicio2();
+		String username="user";
+		String password="password";
+		//2.act
+		Boolean resultado= e2.login(username, password);
+		//3.Assert
+		assertTrue(resultado);
+		
+	}
+
 	@Test
 	public void testLoginPasswordLongitud() {
 		//1.Arrange
 		Ejercicio2 e2=new Ejercicio2();
 		String username="user";
-		String password="password1234512345123451234512345123412231233121212";
+		String password="password123451234512345123451234512341223123312121111111111111111112";
 		//2.act
 		Boolean resultado= e2.login(username, password);
 		//3.Assert
 		assertFalse(resultado);
 		
 	}
-
+	
+	
+	
+	@Test
+	public void testComprobarLoginCorretoBD() {
+		Ejercicio2 e2=new Ejercicio2();
+		String username="user";
+		String password="password";
+		//2.act
+		Boolean resultado= e2.compruebaLoginEnBD(username, password);
+		//3.Assert
+		assertTrue(resultado);
+	}
+	@Test
+	public void testComprobarLoginIncorrectoBD() {
+		Ejercicio2 e2=new Ejercicio2();
+		String username="";
+		String password="password";
+		//2.act
+		Boolean resultado= e2.compruebaLoginEnBD(username, password);
+		//3.Assert
+		assertFalse(resultado);
+	}
 }
