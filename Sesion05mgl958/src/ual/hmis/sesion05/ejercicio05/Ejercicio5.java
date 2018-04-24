@@ -11,8 +11,7 @@ public class Ejercicio5 {
 			if (array[i] == '.') {
 				resultado = cadena.substring(0, i);
 				break;
-			} else if (array[i] == '0' || array[i] == '1' || array[i] == '2' || array[i] == '3' || array[i] == '4'
-					|| array[i] == '5' || array[i] == '6' || array[i] == '7' || array[i] == '8' || array[i] == '9') {
+			} else if (isDigit(array[i])) {
 				 resultado="Error: cadena con dígito";
 				 break;
 			} else {
@@ -21,5 +20,8 @@ public class Ejercicio5 {
 			
 		}
 		return resultado;
+	}
+	public boolean isDigit(char c) {
+		return Character.isDigit(c);
 	}
 }

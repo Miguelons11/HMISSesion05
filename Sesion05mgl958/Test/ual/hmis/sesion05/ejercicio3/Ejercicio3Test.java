@@ -9,7 +9,7 @@ import ual.hmis.sesion05.ejercicio02.Ejercicio2;
 class Ejercicio3Test {
 
 	@Test
-	public void testNúmeroCorrecto() {
+	public void testNumeroCorrecto() {
 		Ejercicio3 e3=new Ejercicio3();
 		
 		//2.act
@@ -19,7 +19,7 @@ class Ejercicio3Test {
 	}
 
 	@Test
-	public void testNúmeroIncorrecto() {
+	public void testNumeroIncorrecto() {
 		Ejercicio3 e3=new Ejercicio3();
 		
 		//2.act

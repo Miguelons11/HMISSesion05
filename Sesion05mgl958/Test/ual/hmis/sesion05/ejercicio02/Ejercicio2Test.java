@@ -9,7 +9,7 @@ import ual.hmis.sesion05.ejercicio1.Ejercicio1;
 class Ejercicio2Test {
 
 	@Test
-	public void testLoginUserNameCadenaVacía() {
+	public void testLoginUserNameCadenaVacia() {
 		//1.Arrange
 		Ejercicio2 e2=new Ejercicio2();
 		String username="";
@@ -21,7 +21,7 @@ class Ejercicio2Test {
 		
 	}
 	@Test
-	public void testLoginPasswordCadenaVacía() {
+	public void testLoginPasswordCadenaVacia() {
 		//1.Arrange
 		Ejercicio2 e2=new Ejercicio2();
 		String username="user";
@@ -46,7 +46,7 @@ class Ejercicio2Test {
 	}
 	
 	@Test
-	public void testLoginUserNamePasswordCadenaVacía() {
+	public void testLoginUserNamePasswordCadenaVacia() {
 		//1.Arrange
 		Ejercicio2 e2=new Ejercicio2();
 		String username="user";

@@ -16,12 +16,14 @@ import org.junit.runners.Parameterized.Parameters;
 @RunWith(Parameterized.class)
 public class Ejercicio2TestParametrizado {
 
-	private int entrada;
-	private int resultado;
+	private String user;
+	private String passwd;
+	private boolean resultado;
 	private Ejercicio2 ejercicio2;
 
-	public Ejercicio2TestParametrizado (int entrada, int resultado) {
-	        this.entrada = entrada;
+	public Ejercicio2TestParametrizado (String user,String passwd, boolean resultado) {
+	        this.user = user;
+	        this.passwd=passwd;
 	        this.resultado = resultado;
 	
 	    }
@@ -35,14 +37,15 @@ public class Ejercicio2TestParametrizado {
 	@Parameters
 	 public static Collection numeros() {
 	      return Arrays.asList(new Object[][] {
-	         { 2, 1 },
-	         { 3, 1 },
-	         { 5, 1 },
-	         { 7, 7 },
+	         { "", "password",false},
 	      });
 	   }
-	
-	
+	@Test
+	public void testLoginPasswordCadenaVacia() {
+		assertFalse(ejercicio2.login(user, passwd));
+		
+	}
+
 }
 
 
