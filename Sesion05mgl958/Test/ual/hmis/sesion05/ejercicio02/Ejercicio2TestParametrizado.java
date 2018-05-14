@@ -1,5 +1,6 @@
 package ual.hmis.sesion05.ejercicio02;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
@@ -37,12 +38,17 @@ public class Ejercicio2TestParametrizado {
 	@Parameters
 	 public static Collection numeros() {
 	      return Arrays.asList(new Object[][] {
+	         { "user", "",false},
 	         { "", "password",false},
+	         { "user121212121212121212121212121212121211212", "password",false},
+	         { "user", "password123451234512345123451234512341223123312121111111111111111112",false},
+	         { "user", "password",true},
+	         {"usr","password",false}
 	      });
 	   }
 	@Test
 	public void testLoginPasswordCadenaVacia() {
-		assertFalse(ejercicio2.login(user, passwd));
+		assertEquals(ejercicio2.login(user, passwd),resultado);
 		
 	}
 
