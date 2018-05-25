@@ -10,7 +10,7 @@ public class Ejercicio3 {
 		}
 		return resultado;
 		}else {
-			return "número erróneo";
+			return "numero erróneo";
 		}
 	}
 }

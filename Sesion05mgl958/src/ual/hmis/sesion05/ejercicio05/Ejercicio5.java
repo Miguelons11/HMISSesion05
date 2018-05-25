@@ -12,7 +12,7 @@ public class Ejercicio5 {
 				resultado = cadena.substring(0, i);
 				break;
 			} else if (isDigit(array[i])) {
-				 resultado="Error: cadena con dígito";
+				 resultado="Error: cadena con digito";
 				 break;
 			} else {
 				 resultado = "Error: cadena sin punto";
