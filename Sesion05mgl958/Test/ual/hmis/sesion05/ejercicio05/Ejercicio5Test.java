@@ -23,7 +23,7 @@ Ejercicio5 e5=new Ejercicio5();
 		
 		//2.act
 		String resultado= e5.subcadenaHastaPunto("Hola, me llamo 9 Miguel.AAA");
-		assertEquals(resultado,"Error: cadena con dígito");
+		assertEquals(resultado,"Error: cadena con digito");
 	}
 	
 	@Test

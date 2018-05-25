@@ -35,7 +35,7 @@ public class Ejercicio3TestParametrizado {
 	 public static Collection numeros() {
 	      return Arrays.asList(new Object[][] {
 	         { 6,"******"},
-	         {-2,"número erróneo"},
+	         {-2,"numero erroneo"},
 	      });
 	   }
 	@Test

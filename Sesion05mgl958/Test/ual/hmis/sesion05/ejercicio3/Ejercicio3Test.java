@@ -25,6 +25,6 @@ class Ejercicio3Test {
 		//2.act
 		String resultado= e3.CaracteresReturn(-2);
 		//3.Assert
-		assertEquals(resultado,"número erróneo");
+		assertEquals(resultado,"numero erroneo");
 	}
 }

@@ -32,7 +32,7 @@ public class Ejercicio5TestParametrizado {
 	@Parameters
 	 public static Collection numeros() {
 	      return Arrays.asList(new Object[][] {
-	         { "Hola, me llamo 9 Miguel.AAA","Error: cadena con dígito"},
+	         { "Hola, me llamo 9 Miguel.AAA","Error: cadena con digito"},
 	         {"Hola, me llamo Miguel.AAA","Hola, me llamo Miguel"},
 	         {"Hola, me llamo Miguel","Error: cadena sin punto"}
 	      });
